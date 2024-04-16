@@ -7,9 +7,9 @@ const Footer = () => {
         <div>
             <div className="mt-10">
 
-                <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-20 md:container md:mx-auto">
+                <footer className="footer footer-center p-10 bg-slate-500 text-base-content rounded mt-20 md:container md:mx-auto">
                     <nav>
-                        <h3 className="font-black text-4xl">Book Vibe</h3>
+                        <h3 className="font-black text-4xl">Finder Land</h3>
                     </nav>
                     <nav>
                         <p className="text-gray-500">Explore our online book page where every book is meticulously <br /> provided for guilt-free indulgence.

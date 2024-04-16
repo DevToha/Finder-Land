@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Luxurious Villa with Ocean View",
+        "segment_name": "Luxury",
+        "description": "Experience the epitome of luxury living with breathtaking ocean views.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Malibu, California",
+        "facilities": [
+            "Infinity Pool",
+            "Spa",
+            "Home Theater",
+            "Gym"
+        ],
+        "image": "https://i.ibb.co/nzxW1nt/daniel-barnes-RKd-Ll-Tyjm5g-unsplash.jpg",
+        "contact_email": "info@luxuryestates.com",
+        "contact_phone": "+1 (555) 123-4567",
+        "year_built": 2010,
+        "num_bedrooms": 6,
+        "num_bathrooms": 8
+    },
+    {
+        "id": 2,
+        "estate_title": "Cozy Cottage Retreat",
+        "segment_name": "Budget",
+        "description": "Escape to this charming cottage nestled in the countryside.",
+        "price": "$300,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Cotswolds, England",
+        "facilities": [
+            "Fireplace",
+            "Garden",
+            "Sunroom"
+        ],
+        "image": "https://i.ibb.co/t8vy3p6/lycs-architecture-k-Udb-EEMc-Rw-E-unsplash.jpg",
+        "contact_email": "info@cottageretreats.com",
+        "contact_phone": "+44 1234 567890",
+        "year_built": 2015,
+        "num_bedrooms": 8,
+        "num_bathrooms": 6
+    },
+    {
+        "id": 3,
+        "estate_title": "Modern City Apartment",
+        "segment_name": "Urban",
+        "description": "Live in style in this sleek and contemporary apartment in the heart of the city.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "1200 sq ft",
+        "location": "Manhattan, New York",
+        "facilities": [
+            "Rooftop Terrace",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "image": "https://i.ibb.co/Bn6cqqH/alessa-ciraulo-1-Hsi-FH7oq-BU-unsplash.jpg",
+        "contact_email": "info@cityapartments.com",
+        "contact_phone": "+1 (212) 555-6789",
+        "year_built": 2017,
+        "num_bedrooms": 5,
+        "num_bathrooms": 5
+    },
+    {
+        "id": 4,
+        "estate_title": "Mountain View Chalet",
+        "segment_name": "Luxury",
+        "description": "Experience the ultimate alpine getaway in this stunning mountain chalet.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Aspen, Colorado",
+        "facilities": [
+            "Hot Tub",
+            "Ski Room",
+            "Home Bar"
+        ],
+        "image": "https://i.ibb.co/yn8Dyyn/sara-dubler-Koei-7y-Yt-Io-unsplash.jpg",
+        "contact_email": "info@mountainchalets.com",
+        "contact_phone": "+1 (970) 555-1234",
+        "year_built": 2010,
+        "num_bedrooms": 7,
+        "num_bathrooms": 5
+    },
+    {
+        "id": 5,
+        "estate_title": "Beachfront Condo",
+        "segment_name": "Luxury",
+        "description": "Wake up to the sound of waves crashing in this elegant beachfront condo.",
+        "price": "$2,800,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Miami Beach, Florida",
+        "facilities": [
+            "Private Beach Access",
+            "Tennis Courts",
+            "Oceanfront Balcony"
+        ],
+        "image": "https://i.ibb.co/MBSVLqG/mohd-elle-oji-NGm-BI5o-unsplash.jpg",
+        "contact_email": "info@cityapartments.com",
+        "contact_phone": "+1 (212) 555-6789",
+        "year_built": 2010,
+        "num_bedrooms": 6,
+        "num_bathrooms": 8
+    },
+    {
+        "id": 6,
+        "estate_title": "Spacious Family Home",
+        "segment_name": "Family",
+        "description": "Create lasting memories in this spacious family home with plenty of room for everyone.",
+        "price": "$700,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Austin, Texas",
+        "facilities": [
+            "Large Backyard",
+            "Playroom",
+            "Home Office"
+        ],
+        "image": "https://i.ibb.co/c3RYh7h/mostafa-safadel-c-Hj-Axn-Jk-w-Q-unsplash.jpg",
+        "contact_email": "info@lakesidecabins.com",
+        "contact_phone": "+1 (530) 555-3456",
+        "year_built": 2013,
+        "num_bedrooms": 5,
+        "num_bathrooms": 7
+    },
+    {
+        "id": 7,
+        "estate_title": "Rustic Lakeside Cabin",
+        "segment_name": "Rural",
+        "description": "Unplug and unwind in this charming lakeside cabin surrounded by nature.",
+        "price": "$400,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Lake Tahoe, California",
+        "facilities": [
+            "Dock",
+            "Fire Pit",
+            "Hiking Trails"
+        ],
+        "image": "https://i.ibb.co/sVZsGkd/jake-irish-61-OONDO7nr-U-unsplash.jpg",
+        "contact_email": "info@urbantownhouses.com",
+        "contact_phone": "+1 (718) 555-6789",
+        "year_built": 2012,
+        "num_bedrooms": 4,
+        "num_bathrooms": 5
+    },
+    {
+        "id": 8,
+        "estate_title": "Elegant Townhouse",
+        "segment_name": "Urban",
+        "description": "Live the urban lifestyle in this elegant townhouse located in a vibrant neighborhood.",
+        "price": "$950,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Brooklyn, New York",
+        "facilities": [
+            "Private Garden",
+            "Balcony",
+            "Gourmet Kitchen"
+        ],
+        "image": "https://i.ibb.co/JsStkXm/grant-durr-yb-Vh-YLhh1w-A-unsplash.jpg",
+        "contact_email": "info@lakesidecabins.com",
+        "contact_phone": "+1 (530) 555-3456",
+        "year_built": 2020,
+        "num_bedrooms": 7,
+        "num_bathrooms": 9
+    },
+    {
+        "id": 9,
+        "estate_title": "Classic Victorian Mansion",
+        "segment_name": "Luxury",
+        "description": "Step back in time and indulge in the grandeur of this classic Victorian mansion.",
+        "price": "$8,000,000",
+        "status": "sale",
+        "area": "7000 sq ft",
+        "location": "San Francisco, California",
+        "facilities": [
+            "Grand Staircase",
+            "Ballroom",
+            "Library"
+        ],
+        "image": "https://i.ibb.co/Dt2RhLk/beautiful-girl-sitting-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand.jpg",
+        "contact_email": "info@victorianmansions.com",
+        "contact_phone": "+1 (415) 555-6789",
+        "year_built": 2000,
+        "num_bedrooms": 6,
+        "num_bathrooms": 5
+    }
+]
