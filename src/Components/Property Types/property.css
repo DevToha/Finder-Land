@@ -1,0 +1,55 @@
+
+.card16 {
+    width: 220px;
+    height: 264px;
+    color: #000;
+    background-color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card16:hover {
+    transform: scale(1.1);
+  }
+  
+  .card16-header img {
+    height: 120px;
+    width: 100%;
+    border-bottom-right-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .card16-details {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
+  
+  .card16-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+  
+  .card16-text {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+  
+  .card16-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background: linear-gradient(to left, #5f03f4, #8ba5e9);
+  }
+  
+  .card16-btn:hover {
+    background: linear-gradient(to left, #9f6cf0, #5f03f4);
+  }
+  
