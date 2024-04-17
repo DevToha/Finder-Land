@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-
+import './Header.css'
+import { IoLogoElectron } from "react-icons/io5";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -14,7 +15,7 @@ const Header = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/card">Card</NavLink></li>
+        <li><NavLink to="/card">Cart</NavLink></li>
         <li><NavLink to="/ListedBooks">Update Profile</NavLink></li>
         <li><NavLink to="/PagesRead">User profile</NavLink></li>
         {/* <li><NavLink to="/TopRatedBook">Catalog</NavLink></li> */}
@@ -22,7 +23,7 @@ const Header = () => {
     </>
 
     return (
-        <div>
+        <div className="px-7">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -33,7 +34,12 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost lg:text-3xl text-xl font-bold">Finder Land</a>
+
+                    <div className="flex justify-center items-center text-center gap-2">
+                        <p className="text-3xl"><IoLogoElectron /></p>
+                        <div className="text12">Finder Land</div>
+                    </div>
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
@@ -44,10 +50,10 @@ const Header = () => {
 
                     {
                         user ?
-                            <button onClick={handleSignOut} className="btn lg:mr-10 text-white bg-[#23BE0A]">Logout</button>
+                            <button onClick={handleSignOut} className="btn text-white bg-[#23BE0A]">Logout</button>
                             :
                             <Link to="/logIn">
-                                <button className="btn lg:mr-10 text-white bg-[#23BE0A]">LogIn</button>
+                                <button className="btn text-white bg-[#23BE0A]">LogIn</button>
                             </Link>
                     }
                     {/* <Link to="/logIn">
