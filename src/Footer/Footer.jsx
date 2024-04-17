@@ -1,31 +1,57 @@
 import facebook from '../Images/icons8-facebook-30.png'
 import twitter from '../Images/icons8-twitter-30.png'
 import instagram from '../Images/icons8-instagram-30.png'
+import github from '../Images/icons8-github-30.png'
 
 const Footer = () => {
     return (
         <div>
-            <div className="mt-10">
+            <div className="mt-20">
 
-                <footer className="footer footer-center p-10 bg-slate-500 text-base-content rounded mt-20 md:container md:mx-auto">
-                    <nav>
-                        <h3 className="font-black text-4xl">Finder Land</h3>
-                    </nav>
-                    <nav>
-                        <p className="text-gray-500">Explore our online book page where every book is meticulously <br /> provided for guilt-free indulgence.
-                        </p>
-                    </nav>
-                    <nav>
-                        <div className="grid grid-flow-col gap-4">
-                            <img className=' cursor-pointer' src={facebook} alt="" />
-                            <img className=' cursor-pointer' src={twitter} alt="" />
-                            <img className=' cursor-pointer' src={instagram} alt="" />
-                        </div>
-                    </nav>
-                    <aside>
-                        <div className="lg:w-[825px] w-[215px] h-1 bg-[#1313181A]"></div>
-                        <p className="text-gray-500 mt-7">2024, All Rights Reserved.</p>
-                    </aside>
+                <footer className='bg-primary-content h-[420px] p-20'>
+                    <footer className="footer text-base-content ml-20 ">
+                        <nav>
+                            <h6 className="footer-title">Services</h6>
+                            <a className="link link-hover">Branding</a>
+                            <a className="link link-hover">Design</a>
+                            <a className="link link-hover">Marketing</a>
+                            <a className="link link-hover">Advertisement</a>
+                        </nav>
+                        <nav>
+                            <h6 className="footer-title">Company</h6>
+                            <a className="link link-hover">About us</a>
+                            <a className="link link-hover">Contact</a>
+                            <a className="link link-hover">Jobs</a>
+                            <a className="link link-hover">Press kit</a>
+                        </nav>
+                        <nav>
+                            <h6 className="footer-title">Legal</h6>
+                            <a className="link link-hover">Terms of use</a>
+                            <a className="link link-hover">Privacy policy</a>
+                            <a className="link link-hover">Cookie policy</a>
+                        </nav>
+                        <form>
+                            <h6 className="footer-title">Market or Promotions</h6>
+                            <fieldset className="form-control w-80">
+                                {/* <label className="label">
+                                    <span className="label-text">Enter your email address</span>
+                                </label> */}
+                                <div className="join">
+                                    <input type="text" placeholder="your@email.com" className="input input-bordered join-item" />
+                                    <button className="btn btn-primary join-item">Next</button>
+                                </div>
+                                <div className="flex mt-5 gap-4">
+                                    <img className=' cursor-pointer' src={facebook} alt="" />
+                                    <img className=' cursor-pointer' src={twitter} alt="" />
+                                    <img className=' cursor-pointer' src={instagram} alt="" />
+                                    <img className=' cursor-pointer' src={github} alt="" />
+                                </div>
+                            </fieldset>
+                        </form>
+                    </footer>
+                    <p className='bg-gray-500 mt-24 h-[1px] w-[1200px] ml-16'></p>
+                    <p className='text-center mt-10 font-semibold'>© 2023, Finderland. Powered by Toha</p>
+
                 </footer>
 
             </div>

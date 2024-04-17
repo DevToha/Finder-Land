@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useContext, useState } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
@@ -70,6 +70,21 @@ const Login = () => {
             })
     }
 
+    const gitHubProvider = new GithubAuthProvider()
+
+
+    const handleGitHubButton = () => {
+        signInWithPopup(auth, gitHubProvider)
+            .then(result => {
+                const gitHubUser = result.user
+                console.log((gitHubUser))
+                // setUser(gitHubUser)
+            })
+            .catch(error => {
+                console.log('error', error.message)
+            })
+    }
+
     return (
         <div className="bg-blue-300 p-5 m-10 rounded-2xl">
             <div className="mx-auto md:w-1/3 mt-10 mb-10">
@@ -97,7 +112,7 @@ const Login = () => {
 
                 <button onClick={handleGoogleButton} className="cursor-pointer mb-2 w-3/4 py-2 px-4 mt-4 border-2 rounded-md border-indigo-500 bg-slate-200">Google login</button>
 
-                <button className="cursor-pointer w-3/4 py-2 px-4 mt-1 border-2 rounded-md border-indigo-500 bg-slate-200">GitHub login</button>
+                <button onClick={handleGitHubButton} className="cursor-pointer w-3/4 py-2 px-4 mt-1 border-2 rounded-md border-indigo-500 bg-slate-200">GitHub login</button>
 
             </div>
 

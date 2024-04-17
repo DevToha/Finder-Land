@@ -6,8 +6,8 @@ const Header = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/ListedBooks">Update Profile</NavLink></li>
         <li><NavLink to="/PagesRead">User profile</NavLink></li>
-        {/* <li><NavLink to="/TopRatedBook">Top Rated Book</NavLink></li>
-        <li><NavLink to="/TopRatedAuthor">Our Top Author</NavLink></li> */}
+        <li><NavLink to="/TopRatedBook">Catalog</NavLink></li>
+        <li><NavLink to="/TopRatedAuthor">Card</NavLink></li>
 
     </>
 

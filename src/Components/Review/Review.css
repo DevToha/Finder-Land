@@ -1,0 +1,71 @@
+
+.card1 {
+    width: 300px;
+    height: 480px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }
+  .card1-title {
+    padding-top: 20px;
+  }
+  
+  .card1-title,
+  .card1-price,
+  .card1-button-container button {
+    font-weight: bold;
+  }
+  
+  .card1-price {
+    color: rgb(199, 198, 198);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .card1-title {
+    color: rgb(30, 30, 30);
+  }
+  
+  .card1-price-container {
+    padding-top: 9px;
+    padding-bottom: 1px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
+  }
+  .card1-description {
+    font-size: 16px;
+    color: rgb(118, 118, 118);
+  }
+  
+  .card1-benefits {
+    list-style: none;
+    position: relative;
+    right: 10%;
+  }
+  
+  .card1-benefits li {
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+  }
+  
+  .card1-benefits li:nth-child(1) {
+    margin-top: 22px;
+  }
+  
+  .card1-button-container button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: rgb(239, 239, 239);
+    transition: box-shadow 0.15s ease-in-out;
+    background: linear-gradient(90deg, #5f03f4, #2b2bff, #3838ff, #5f03f4);
+  }
+  
+  .card1-button-container button:hover {
+    box-shadow: 0px 0px 15px 0px #3838ff;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  
