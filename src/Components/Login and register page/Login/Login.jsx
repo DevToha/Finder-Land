@@ -30,6 +30,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 e.target.reset()
+                navigate(location?.state ? location.state : '/')
                 // navigate('/')
             })
             .catch(error => {
@@ -84,6 +85,7 @@ const Login = () => {
             .then(result => {
                 const gitHubUser = result.user
                 console.log((gitHubUser))
+                navigate(location?.state ? location.state : '/')
                 // setUser(gitHubUser)
             })
             .catch(error => {

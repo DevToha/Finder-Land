@@ -16,7 +16,7 @@ const Header = () => {
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/card">Cart</NavLink></li>
-        <li><NavLink to="/ListedBooks">Update Profile</NavLink></li>
+        <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
         <li><NavLink to="/PagesRead">User profile</NavLink></li>
         {/* <li><NavLink to="/TopRatedBook">Catalog</NavLink></li> */}
 
@@ -47,13 +47,16 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    {
+                        user && <span className="bg-gray-400 w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full" src={user.photoURL} alt="" /></span>
+                    }
 
                     {
                         user ?
-                            <button onClick={handleSignOut} className="btn text-white bg-[#23BE0A]">Logout</button>
+                            <button onClick={handleSignOut} className="btn text-white bg-[#23BE0A]">LOG OUT</button>
                             :
                             <Link to="/logIn">
-                                <button className="btn text-white bg-[#23BE0A]">LogIn</button>
+                                <button className="btn text-white bg-[#23BE0A]">LOGIN</button>
                             </Link>
                     }
                     {/* <Link to="/logIn">

@@ -1,0 +1,50 @@
+.background{
+    background-image: url(./image/matthew-henry-VviFtDJakYk-unsplash.jpg);
+}
+
+.input22 {
+    position: relative;
+    width: 95%;
+    height: 40px;
+  }
+  .input22 input {
+    color: black;
+    font-size: 16px;
+    border: none;
+  }
+  .input22 input:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  .input22:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-position: 0% 0%;
+    background: linear-gradient(
+      to right,
+      #5f03f4,
+      #478585,
+      #b8b95b,
+      #62f0f0,
+      #5f03f4,
+      #62f0f0
+    );
+    background-size: 500% auto;
+    animation: input22-animation 2.5s linear infinite;
+  }
+  
+  @keyframes input22-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  

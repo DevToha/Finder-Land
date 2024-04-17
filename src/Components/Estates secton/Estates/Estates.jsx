@@ -15,9 +15,9 @@ const Estates = () => {
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl mb-10">Estates:{estates.length}</h2>
+            <h2 className="text-center font-bold text-4xl mb-10">Featured Estate</h2>
 
-            <div className="lg:grid lg:grid-cols-3 lg:ml-10">
+            <div className="lg:grid lg:grid-cols-3 lg:ml-[75px]">
                 {
                     estates.map(estate => <Estate key={estate.id} estate={estate}></Estate>)
                 }

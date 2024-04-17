@@ -2,10 +2,13 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 
 const Register = () => {
 
+    const [showPassword, setShowPassword] = useState(false)
     const [catchError, setCatchError] = useState('')
     const [success, setSuccess] = useState('')
     const handleRegister = (e) => {
@@ -19,6 +22,16 @@ const Register = () => {
             setCatchError('Password should be at least 6 characters or longer')
             return
         }
+
+        if (!/[A-Z]/.test(password)) {
+            setCatchError('Your password should have at least one uppercase character.');
+            return;
+        }
+        else if (!/[a-z]/.test(password)) {
+            setCatchError('Your password should have at least one lowercase character.');
+            return;
+        }
+
 
 
         // reset error
@@ -57,7 +70,13 @@ const Register = () => {
 
                     <br />
 
-                    <input className="mb-4 w-3/4 py-2 px-4 border-2 border-green-400 rounded-md" type="password" placeholder="Password" name="password" id="" required />
+                    <div className="mb-4 relative">
+                        <input className=" w-3/4 py-2 px-4 border-2 border-green-400 rounded-md" type={showPassword ? "text" : "password"} placeholder="Password" name="password" id="" required />
+
+                        <span className="absolute top-3 right-[132px]" onClick={() => setShowPassword(!showPassword)}>
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
+                        </span>
+                    </div>
 
                     {
                         catchError && <p className="text-base font-medium text-red-500">{catchError}</p>

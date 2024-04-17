@@ -1,6 +1,69 @@
 [
     {
         "id": 1,
+        "estate_title": "Cozy Cottage Retreat",
+        "segment_name": "Budget",
+        "description": "Escape to this charming cottage nestled in the countryside.",
+        "price": "$300,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Cotswolds, England",
+        "facilities": [
+            "Fireplace",
+            "Garden",
+            "Sunroom"
+        ],
+        "image": "https://i.ibb.co/t8vy3p6/lycs-architecture-k-Udb-EEMc-Rw-E-unsplash.jpg",
+        "contact_email": "info@cottageretreats.com",
+        "contact_phone": "+44 1234 567890",
+        "year_built": 2015,
+        "num_bedrooms": 8,
+        "num_bathrooms": 6
+    },
+    {
+        "id": 2,
+        "estate_title": "Mountain View Chalet",
+        "segment_name": "Luxury",
+        "description": "Experience the ultimate alpine getaway in this stunning mountain chalet.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Aspen, Colorado",
+        "facilities": [
+            "Hot Tub",
+            "Ski Room",
+            "Home Bar"
+        ],
+        "image": "https://i.ibb.co/yn8Dyyn/sara-dubler-Koei-7y-Yt-Io-unsplash.jpg",
+        "contact_email": "info@mountainchalets.com",
+        "contact_phone": "+1 (970) 555-1234",
+        "year_built": 2010,
+        "num_bedrooms": 7,
+        "num_bathrooms": 5
+    },
+    {
+        "id": 3,
+        "estate_title": "Beachfront Condo",
+        "segment_name": "Luxury",
+        "description": "Wake up to the sound of waves crashing in this elegant beachfront condo.",
+        "price": "$2,800,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Miami Beach, Florida",
+        "facilities": [
+            "Private Beach Access",
+            "Tennis Courts",
+            "Oceanfront Balcony"
+        ],
+        "image": "https://i.ibb.co/MBSVLqG/mohd-elle-oji-NGm-BI5o-unsplash.jpg",
+        "contact_email": "info@cityapartments.com",
+        "contact_phone": "+1 (212) 555-6789",
+        "year_built": 2010,
+        "num_bedrooms": 6,
+        "num_bathrooms": 8
+    },
+    {
+        "id": 4,
         "estate_title": "Luxurious Villa with Ocean View",
         "segment_name": "Luxury",
         "description": "Experience the epitome of luxury living with breathtaking ocean views.",
@@ -22,29 +85,8 @@
         "num_bathrooms": 8
     },
     {
-        "id": 2,
-        "estate_title": "Cozy Cottage Retreat",
-        "segment_name": "Budget",
-        "description": "Escape to this charming cottage nestled in the countryside.",
-        "price": "$300,000",
-        "status": "sale",
-        "area": "1500 sq ft",
-        "location": "Cotswolds, England",
-        "facilities": [
-            "Fireplace",
-            "Garden",
-            "Sunroom"
-        ],
-        "image": "https://i.ibb.co/t8vy3p6/lycs-architecture-k-Udb-EEMc-Rw-E-unsplash.jpg",
-        "contact_email": "info@cottageretreats.com",
-        "contact_phone": "+44 1234 567890",
-        "year_built": 2015,
-        "num_bedrooms": 8,
-        "num_bathrooms": 6
-    },
-    {
-        "id": 3,
-        "estate_title": "Modern City Apartment",
+        "id": 5,
+        "estate_title": "The Falkland Islands",
         "segment_name": "Urban",
         "description": "Live in style in this sleek and contemporary apartment in the heart of the city.",
         "price": "$1,200,000",
@@ -62,48 +104,6 @@
         "year_built": 2017,
         "num_bedrooms": 5,
         "num_bathrooms": 5
-    },
-    {
-        "id": 4,
-        "estate_title": "Mountain View Chalet",
-        "segment_name": "Luxury",
-        "description": "Experience the ultimate alpine getaway in this stunning mountain chalet.",
-        "price": "$3,500,000",
-        "status": "sale",
-        "area": "4000 sq ft",
-        "location": "Aspen, Colorado",
-        "facilities": [
-            "Hot Tub",
-            "Ski Room",
-            "Home Bar"
-        ],
-        "image": "https://i.ibb.co/yn8Dyyn/sara-dubler-Koei-7y-Yt-Io-unsplash.jpg",
-        "contact_email": "info@mountainchalets.com",
-        "contact_phone": "+1 (970) 555-1234",
-        "year_built": 2010,
-        "num_bedrooms": 7,
-        "num_bathrooms": 5
-    },
-    {
-        "id": 5,
-        "estate_title": "Beachfront Condo",
-        "segment_name": "Luxury",
-        "description": "Wake up to the sound of waves crashing in this elegant beachfront condo.",
-        "price": "$2,800,000",
-        "status": "sale",
-        "area": "2000 sq ft",
-        "location": "Miami Beach, Florida",
-        "facilities": [
-            "Private Beach Access",
-            "Tennis Courts",
-            "Oceanfront Balcony"
-        ],
-        "image": "https://i.ibb.co/MBSVLqG/mohd-elle-oji-NGm-BI5o-unsplash.jpg",
-        "contact_email": "info@cityapartments.com",
-        "contact_phone": "+1 (212) 555-6789",
-        "year_built": 2010,
-        "num_bedrooms": 6,
-        "num_bathrooms": 8
     },
     {
         "id": 6,

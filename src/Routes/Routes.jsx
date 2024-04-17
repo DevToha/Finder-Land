@@ -6,6 +6,7 @@ import Register from "../Components/Login and register page/Register/Register";
 import EstateDetails from "../Components/Estate Details/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import Card from "../Components/Card/Card";
+import UpdateProfile from "../Components/Update profile/UpdateProfile";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/card",
         element: <PrivateRoute><Card></Card></PrivateRoute>
+      },
+      {
+        path: "/updateProfile",
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       }
     ]
   },
