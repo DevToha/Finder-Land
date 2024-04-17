@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Card = () => {
     return (
         <div className="text-center">
-            <h1 className="text-4xl font-semibold mt-10">WELCOME TO YOUR SHOPPING CART</h1>
+            <h1 className="text-4xl font-semibold mt-10">WELCOME TO SHOPPING CART</h1>
 
             <p className="ml-[685px] text-[160px] my-6"><RiShoppingCartLine /></p>
 

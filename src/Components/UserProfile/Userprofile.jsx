@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-// pl-[700px]
 
-const UpdateProfile = () => {
+
+const Userprofile = () => {
     const { user } = useContext(AuthContext)
+
     return (
         <div className=" px-10 mt-10">
-            <div className="bg-amber-100 rounded-2xl w-[] h-[400px] pt-16 ">
+            <div className="bg-gray-200 rounded-2xl w-[] h-[400px] pt-16 ">
                 {
                     user &&
                     <div className="ml-[642px]">
@@ -21,4 +22,4 @@ const UpdateProfile = () => {
     );
 };
 
-export default UpdateProfile;
+export default Userprofile;
