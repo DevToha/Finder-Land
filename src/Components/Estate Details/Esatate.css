@@ -1,0 +1,22 @@
+
+.card3-actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.card3-accept,
+.card3-manage {
+    font-size: 14px;
+    color: #fff;
+    margin: 4px;
+    padding: 8px 5px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #5f03f4, #2b2bff, #3838ff, #5f03f4);
+}
+
+.card3-accept:hover,
+.card3-manage:hover {
+    box-shadow: 0px 0px 15px 0px #3838ff;
+}

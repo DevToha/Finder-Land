@@ -3,13 +3,16 @@ import { useContext, useState } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
 
     // const [user, setUser] = useState(null)
 
+    const location = useLocation()
+    console.log(location)
+    const navigate = useNavigate()
 
     const { signInUser } = useContext(AuthContext)
     // const navigate = useNavigate()
@@ -62,6 +65,9 @@ const Login = () => {
             .then(result => {
                 const GoogleUser = result.user
                 console.log(GoogleUser)
+
+                navigate(location?.state ? location.state : '/')
+
                 // setSuccess(GoogleUser)
                 // navigate('/')
             })
