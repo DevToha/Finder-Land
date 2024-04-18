@@ -6,6 +6,10 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
+
 import './Login.css'
 
 const Login = () => {
@@ -26,34 +30,48 @@ const Login = () => {
     const [catchError, setCatchError] = useState('')
     const [success, setSuccess] = useState('')
 
+
     const handleSignIn = (e) => {
 
-        e.preventDefault()
-        const email = e.target.email.value
-        const password = e.target.password.value
-        console.log(email, password)
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
 
         signInUser(email, password)
             .then(result => {
-                console.log(result.user)
-                e.target.reset()
-                navigate(location?.state ? location.state : '/')
-                // navigate('/')
+                console.log(result.user);
+                e.target.reset();
+                navigate(location?.state ? location.state : '/');
+                // Show success alert
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Successfully logged in',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             })
             .catch(error => {
-                console.error(error)
-            })
+                console.error(error);
+                // Show error alert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Failed to log in. Please check your credentials.',
+                });
+            });
 
         // password setting
         if (password.length < 6) {
-            setCatchError('Password should be at least 6 characters or longer')
-            return
+            setCatchError('Password should be at least 6 characters or longer');
+            return;
         }
 
         // reset error
-        setCatchError('')
+        setCatchError('');
         // reset success
-        setSuccess('')
+        setSuccess('');
 
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -71,18 +89,28 @@ const Login = () => {
     const handleGoogleButton = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                const GoogleUser = result.user
-                console.log(GoogleUser)
-
-                navigate(location?.state ? location.state : '/')
-
-                // setSuccess(GoogleUser)
-                // navigate('/')
+                const GoogleUser = result.user;
+                console.log(GoogleUser);
+                navigate(location?.state ? location.state : '/');
+                // Show success alert
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Successfully logged in with Google',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             })
             .catch(error => {
-                console.log('error', error.message)
-            })
-    }
+                console.error('error', error.message);
+                // Show error alert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Failed to log in with Google',
+                });
+            });
+    };
 
     const gitHubProvider = new GithubAuthProvider()
 
@@ -90,15 +118,28 @@ const Login = () => {
     const handleGitHubButton = () => {
         signInWithPopup(auth, gitHubProvider)
             .then(result => {
-                const gitHubUser = result.user
-                console.log((gitHubUser))
-                navigate(location?.state ? location.state : '/')
-                // setUser(gitHubUser)
+                const gitHubUser = result.user;
+                console.log((gitHubUser));
+                navigate(location?.state ? location.state : '/');
+                // Show success alert
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Successfully logged in with GitHub',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             })
             .catch(error => {
-                console.log('error', error.message)
-            })
-    }
+                console.error('error', error.message);
+                // Show error alert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Failed to log in with GitHub',
+                });
+            });
+    };
     // mx-auto
 
     return (
@@ -132,7 +173,9 @@ const Login = () => {
                     <button onClick={handleGoogleButton} className="cursor-pointer w-[352px] py-2 px-4 border-2 rounded-md border-gray-300 bg-white text-base font-semibold">Continue With Google</button>
 
                     <span className="absolute top-3 left-16 text-xl"><FcGoogle /></span>
+                    {/* <ToastContainer /> */}
                 </div>
+
 
                 {/* <div className="flex gap-4 ml-2 mb-3">
                     <div className="bg-gray-500 w-[138px] h-[2px] mt-3"></div>
