@@ -8,8 +8,8 @@ const Footer = () => {
         <div>
             <div className="mt-20">
 
-                <footer className='bg-primary-content lg:h-[420px] p-20'>
-                    <footer className=" footer text-base-content ml-20 ">
+                <footer className='bg-primary-content lg:h-[420px] lg:p-20 md:p-20 p-5 pt-10'>
+                    <footer className=" footer text-base-content lg:ml-20 md:ml-20 ml-8">
                         <nav>
                             <h6 className="footer-title">Services</h6>
                             <a className="link link-hover">Branding</a>

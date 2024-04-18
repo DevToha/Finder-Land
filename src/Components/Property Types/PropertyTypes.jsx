@@ -10,7 +10,7 @@ import { HiOutlineHomeModern } from "react-icons/hi2";
 
 const PropertyTypes = () => {
     return (
-        <div className="lg:mt-10 p-10">
+        <div className="lg:mt-10 p-10 lg:px-0 md:px-0 px-20">
             <h1 className="text-4xl font-bold mb-10 ">Property Types</h1>
             <div className="lg:flex md:grid md:grid-cols-3 justify-center gap-5">
                 <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">

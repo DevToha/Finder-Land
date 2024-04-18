@@ -36,7 +36,7 @@ const Header = () => {
                     </div>
 
                     <div className="flex justify-center items-center text-center gap-2">
-                        <p className="text-3xl"><IoLogoElectron /></p>
+                        <p className="text-3xl lg:inline md:inline hidden"><IoLogoElectron /></p>
                         <div className="text12">Finder Land</div>
                     </div>
 
@@ -48,7 +48,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user && <span className="bg-gray-400 cursor-pointer w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full" src={user.photoURL} alt="" title={user.displayName} /></span>
+                        user && <span className="bg-gray-400 lg:inline md:inline hidden cursor-pointer w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full" src={user.photoURL} alt="" title={user.displayName} /></span>
                     }
 
                     {
