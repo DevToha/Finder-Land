@@ -136,7 +136,7 @@ const Login = () => {
     // mx-auto
 
     return (
-        <div className="bg-white shadow8 py-5 pl-[115px] ml-[450px] m-10 rounded-3xl w-[600px]">
+        <div className="bg-white shadow8 py-5 lg:pl-[115px] lg:ml-[450px] md:ml-0 m-10 rounded-3xl w-[600px]">
             <div className=" md:w-1/3 mt-10 mb-10">
                 <h3 className="text-3xl mb-8 ml-[60px] font-semibold w-[230px]">Let's get started!</h3>
                 <form
