@@ -14,10 +14,10 @@ const Header = () => {
     }
 
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/card">Cart</NavLink></li>
-        <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
-        <li><NavLink to="/userProfile">User profile</NavLink></li>
+        <li><NavLink to="/"><span className="text-lg font-semibold">Home</span></NavLink></li>
+        <li><NavLink to="/card"><span className="text-lg font-semibold">Cart</span></NavLink></li>
+        <li><NavLink to="/updateProfile"><span className="text-lg font-semibold">Update Profile</span></NavLink></li>
+        <li><NavLink to="/userProfile"><span className="text-lg font-semibold">User profile</span></NavLink></li>
         {/* <li><NavLink to="/TopRatedBook">Catalog</NavLink></li> */}
 
     </>
@@ -53,16 +53,12 @@ const Header = () => {
 
                     {
                         user ?
-                            <button onClick={handleSignOut} className="btn text-white bg-[#23BE0A]">LOG OUT</button>
+                            <button onClick={handleSignOut} className="button21">LOG OUT</button>
                             :
                             <Link to="/logIn">
-                                <button className="btn text-white bg-[#23BE0A]">LOGIN</button>
+                                <button className="button21">LOGIN</button>
                             </Link>
                     }
-                    {/* <Link to="/logIn">
-                        <button className="btn lg:mr-10 text-white bg-[#23BE0A]">LogIn</button>
-                    </Link> */}
-
 
                 </div>
             </div>

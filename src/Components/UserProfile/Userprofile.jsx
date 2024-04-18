@@ -7,16 +7,19 @@ const Userprofile = () => {
 
     return (
         <div className=" px-10 mt-10">
-            <div className="bg-gray-200 rounded-2xl w-[] h-[400px] pt-16 ">
+            <div className="bg-white shadow-lg h-[420px] py-5 pl-[115px] ml-[450px] m-10 rounded-3xl w-[590px]">
                 {
                     user &&
-                    <div className="ml-[642px]">
-                        <span className="bg-gray-400 w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full w-[100px] h-[100px]" src={user.photoURL} alt="" /></span>
-                        <p className="text-lg font-semibold"> Name : {user.displayName}</p>
+                    <div className="">
+                        <h1 className="text-3xl font-semibold my-5 ml-20">User profile</h1>
+                        <span className="bg-gray-400 w-[45px] rounded-full h-[45px]"><img className="rounded-full ml-28 w-[100px] h-[100px]" src={user.photoURL} alt="" /></span>
+                        <p className="text-lg font-semibold mt-5 ml-[85px]"> Name : {user.displayName}</p>
                         <br />
-                        <p className="text-lg font-semibold">Email : {user.email}</p>
+                        <p className="text-lg font-semibold ml-3">Email : {user.email}</p>
                     </div>
                 }
+
+                {/* <button className="btn btn-warning mt-10 ml-[110px]">Edit Profile</button> */}
             </div>
         </div>
     );
