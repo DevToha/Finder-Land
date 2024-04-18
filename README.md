@@ -1,4 +1,22 @@
-# React + Vite
+## Finder Land
+
+## live site URL: 
+
+## Bullet point Features
+- Bullet point 1 : Responsive design for mobile and desktop devices.
+- Bullet point 2 : User-friendly interface with intuitive navigation.
+- Bullet point 3 : User-friendly interface with intuitive navigation.
+- Bullet point 4 : Secure authentication system for user accounts.
+- Bullet point 5 : User-friendly interface with intuitive navigation.
+## Use npm package
+
+
+
+
+
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
