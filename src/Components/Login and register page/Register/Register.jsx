@@ -1,12 +1,17 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 
 
 const Register = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Register Page";
+    }, [location.pathname]);
 
     const [showPassword, setShowPassword] = useState(false)
     const [catchError, setCatchError] = useState('')

@@ -1,10 +1,17 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import 'animate.css';
+import { useLocation } from "react-router-dom";
 
 
 const UpdateProfile = () => {
     const { user } = useContext(AuthContext)
+    const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Update Profile";
+    }, [location.pathname]);
+
     return (
         <div className=" px-10 mt-10">
             <div className="bg-white shadow-lg h-[420px] py-5 pl-[115px] ml-[450px] m-10 rounded-3xl w-[590px]">

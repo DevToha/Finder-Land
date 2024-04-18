@@ -8,11 +8,13 @@ import PrivateRoute from "./PrivateRoute";
 import Card from "../Components/Card/Card";
 import UpdateProfile from "../Components/Update profile/UpdateProfile";
 import Userprofile from "../Components/UserProfile/Userprofile";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement:<ErrorPage></ErrorPage>,
     element: <Root></Root>,
     children: [
       {

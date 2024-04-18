@@ -1,12 +1,18 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 
 import './Esatate.css'
+import { useEffect } from "react";
 const EstateDetails = () => {
 
     const estates = useLoaderData();
     const { id } = useParams();
     const idInt = parseInt(id);
     const estate = estates.find(estate => estate.id === idInt);
+    const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Estate Details";
+    }, [location.pathname]);
 
     return (
         <div>

@@ -1,5 +1,5 @@
 import { GithubAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
 import { AuthContext } from "../../../Provider/AuthProvider";
@@ -15,6 +15,11 @@ const Login = () => {
     const location = useLocation()
     console.log(location)
     const navigate = useNavigate()
+    // const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Login Page";
+    }, [location.pathname]);
 
     const { signInUser } = useContext(AuthContext)
     // const navigate = useNavigate()

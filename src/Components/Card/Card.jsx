@@ -1,8 +1,15 @@
 import { RiShoppingCartLine } from "react-icons/ri";
 
 import './Cart.css'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const Card = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Shopping Cart";
+    }, [location.pathname]);
     return (
         <div className="text-center">
             <h1 className="text-4xl font-semibold mt-10">WELCOME TO SHOPPING CART</h1>

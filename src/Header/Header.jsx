@@ -48,7 +48,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user && <span className="bg-gray-400 w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full" src={user.photoURL} alt="" /></span>
+                        user && <span className="bg-gray-400 cursor-pointer w-[45px] mr-5 rounded-full h-[45px]"><img className="rounded-full" src={user.photoURL} alt="" title={user.displayName} /></span>
                     }
 
                     {
