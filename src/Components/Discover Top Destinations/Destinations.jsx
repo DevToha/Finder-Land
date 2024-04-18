@@ -5,7 +5,7 @@ import newYork from './images/christian-ladewig-FD-gzGKS5sY-unsplash.jpg'
 const Destinations = () => {
     return (
         <div className="lg:mt-8 p-10 lg:px-0 md:px-0 px-20">
-            <h1 className="text-4xl font-bold mb-10">Discover Top Destinations</h1>
+            <h1 className="text-4xl font-bold mb-10 lg:ml-16">Discover Top Destinations</h1>
             <div className='lg:flex md:grid md:grid-cols-3 justify-center gap-5'>
                 <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
