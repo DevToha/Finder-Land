@@ -7,7 +7,7 @@ const Estate = ({ estate }) => {
     const { id, estate_title, image, description, location, segment_name, facilities, status, area } = estate;
 
     return (
-        <div className="card13 mb-14 w-[400px] rounded-md">
+        <div className="card13 lg:mb-14 mb-8 lg:w-[400px] rounded-md">
             <div className="card13-img">
                 <img src={image} alt="nature-pic-CSSsnippets" />
                 <div className="card13-details">

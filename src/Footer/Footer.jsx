@@ -8,8 +8,8 @@ const Footer = () => {
         <div>
             <div className="mt-20">
 
-                <footer className='bg-primary-content h-[420px] p-20'>
-                    <footer className="footer text-base-content ml-20 ">
+                <footer className='bg-primary-content lg:h-[420px] p-20'>
+                    <footer className=" footer text-base-content ml-20 ">
                         <nav>
                             <h6 className="footer-title">Services</h6>
                             <a className="link link-hover">Branding</a>
@@ -49,7 +49,7 @@ const Footer = () => {
                             </fieldset>
                         </form>
                     </footer>
-                    <p className='bg-gray-500 mt-24 h-[1px] w-[1200px] ml-16'></p>
+                    <p className='bg-gray-500 mt-24 h-[1px] lg:w-[1200px] ml-16'></p>
                     <p className='text-center mt-10 font-semibold'>© 2023, Finderland. Powered by Toha</p>
 
                 </footer>

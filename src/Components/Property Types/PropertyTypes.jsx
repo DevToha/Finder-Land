@@ -10,10 +10,10 @@ import { HiOutlineHomeModern } from "react-icons/hi2";
 
 const PropertyTypes = () => {
     return (
-        <div className="mt-10 p-10">
+        <div className="lg:mt-10 p-10">
             <h1 className="text-4xl font-bold mb-10 ">Property Types</h1>
-            <div className="flex justify-center gap-5">
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+            <div className="lg:flex justify-center gap-5">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><MdHolidayVillage /></p>
                     </div>
@@ -24,7 +24,7 @@ const PropertyTypes = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><GiFamilyHouse />
                         </p>
@@ -36,7 +36,7 @@ const PropertyTypes = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><FaRegBuilding />
                         </p>
@@ -48,7 +48,7 @@ const PropertyTypes = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><HiOutlineHomeModern />
                         </p>
@@ -60,7 +60,7 @@ const PropertyTypes = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><BsBuildings />
                         </p>
@@ -72,7 +72,7 @@ const PropertyTypes = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card16 p-10 rounded-2xl cursor-pointer">
+                <div className="lg:mb-0 mb-5 card16 p-10 rounded-2xl cursor-pointer">
                     <div className="card16-header">
                         <p className='text-[90px]'><RiBuilding2Line />
                         </p>
@@ -83,7 +83,7 @@ const PropertyTypes = () => {
                             12 Properties
                         </p>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     );

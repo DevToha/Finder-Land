@@ -13,10 +13,10 @@ import slide_image_6 from '../../assets/Images/sara-dubler-Koei_7yYtIo-unsplash.
 const Banner = () => {
 
     return (
-        <div className='px-14 mt-5 mb-10'>
+        <div className='px-14 mt-5 lg:mb-10'>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={slide_image_1} className="w-full h-[600px] rounded-md" />
+                    <img src={slide_image_1} className="w-full lg:h-[600px] h-[500px] rounded-md" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>

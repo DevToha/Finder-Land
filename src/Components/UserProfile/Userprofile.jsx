@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import 'animate.css';
+
 
 
 const Userprofile = () => {
@@ -11,7 +13,7 @@ const Userprofile = () => {
                 {
                     user &&
                     <div className="">
-                        <h1 className="text-3xl font-semibold my-5 ml-20">User profile</h1>
+                        <h1 className="text-3xl font-semibold my-5 animate__bounceInUp ml-20">User profile</h1>
                         <span className="bg-gray-400 w-[45px] rounded-full h-[45px]"><img className="rounded-full ml-28 w-[100px] h-[100px]" src={user.photoURL} alt="" /></span>
                         <p className="text-lg font-semibold mt-5 ml-[85px]"> Name : {user.displayName}</p>
                         <br />

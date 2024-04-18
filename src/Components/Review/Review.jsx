@@ -2,7 +2,7 @@ import './Review.css'
 
 const Review = () => {
     return (
-        <div className='flex px-28 mt-14 gap-24'>
+        <div className='lg:flex lg:px-28 mt-14 gap-24'>
             <div className="card1 p-10 rounded-md bg-slate-200">
                 <p className="text-6xl mt-28">4.8</p>
 
@@ -11,9 +11,9 @@ const Review = () => {
                 </ul>
                 <p className='cursor-pointer mt-14'>SEE ALL REVIEW ON</p>
             </div>
-            <p className=' bg-gray-200 w-[2px] h-[475px]'></p>
+            <p className=' bg-gray-200 lg:w-[2px] lg:h-[475px]'></p>
             <div>
-                <p className='text-4xl font-medium mb-10'>“As a buyer in a busy market where everyone <br /> is a real estate agent, I seek transparency in <br /> true numbers & Finderland is my first and only <br /> choice.Searches for multiplexes, property <br /> comparisons, and the loan estimator. Works <br /> great.”</p>
+                <p className='lg:text-4xl font-medium mb-10 lg:w-full w-[308px] lg:mt-0 mt-5'>“As a buyer in a busy market where <br /> everyone is a real estate agent, I seek <br /> transparency in true numbers & <br /> Finderland is my first and only choice. <br /> Searches for multiplexes,property <br /> comparisons, and the loan estimator. <br /> Works great.”</p>
                 <p className='text-lg mb-3 font-bold'>Thiago Alcatara</p>
                 <p>Chicago, FL</p>
             </div>

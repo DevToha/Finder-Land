@@ -4,10 +4,10 @@ import newYork from './images/christian-ladewig-FD-gzGKS5sY-unsplash.jpg'
 
 const Destinations = () => {
     return (
-        <div className="mt-8 p-10">
+        <div className="lg:mt-8 p-10">
             <h1 className="text-4xl font-bold mb-10">Discover Top Destinations</h1>
-            <div className='flex justify-center gap-5'>
-                <div className="card7 p-6">
+            <div className='lg:flex justify-center gap-5'>
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
@@ -18,7 +18,7 @@ const Destinations = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card7 p-6">
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
@@ -29,7 +29,7 @@ const Destinations = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card7 p-6">
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
@@ -40,7 +40,7 @@ const Destinations = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card7 p-6">
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
@@ -51,7 +51,7 @@ const Destinations = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card7 p-6">
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
@@ -62,7 +62,7 @@ const Destinations = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card7 p-6">
+                <div className="lg:mb-0 mb-5 card7 p-6">
                     <div className="card7-details">
                         <div>
                             <img src={newYork} alt="" />
