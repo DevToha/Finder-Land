@@ -1,32 +1,25 @@
 import { GithubAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useContext, useEffect, useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../Firebase/Firebase.config";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
 
 import './Login.css'
 
 const Login = () => {
 
-    // const [user, setUser] = useState(null)
-
     const location = useLocation()
     console.log(location)
     const navigate = useNavigate()
-    // const location = useLocation();
 
     useEffect(() => {
         document.title = "Login Page";
     }, [location.pathname]);
 
     const { signInUser } = useContext(AuthContext)
-    // const navigate = useNavigate()
     const [catchError, setCatchError] = useState('')
     const [success, setSuccess] = useState('')
 

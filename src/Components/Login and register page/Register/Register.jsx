@@ -82,13 +82,15 @@ const Register = () => {
                             {showPassword ? <FaEyeSlash /> : <FaEye />}
                         </span>
                     </div>
-                    {
-                        catchError && <p className="text-base font-medium text-red-500">{catchError}</p>
-                    }
+                    <div className="w-[352px]">
+                        {
+                            catchError && <p className="text-base font-medium text-red-500">{catchError}</p>
+                        }
 
-                    {
-                        success && <p className="text-base font-medium text-green-600">{success}</p>
-                    }
+                        {
+                            success && <p className="text-base font-medium text-green-600">{success}</p>
+                        }
+                    </div>
                     <br />
                     <input className="cursor-pointer mb-4 w-[352px] py-2 px-4 border-2 rounded-md border-gray-300 bg-blue-500 text-white text-lg font-medium" type="submit" value="Register" />
                 </form>

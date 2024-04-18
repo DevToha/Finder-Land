@@ -2,7 +2,7 @@ import './Review.css'
 
 const Review = () => {
     return (
-        <div className='lg:flex lg:px-28 mt-14 gap-24'>
+        <div className='lg:flex md:flex lg:px-28 mt-14 lg:gap-24 md:gap-10 md:ml-10'>
             <div className="card1 p-10 rounded-md bg-slate-200">
                 <p className="text-6xl mt-28">4.8</p>
 
